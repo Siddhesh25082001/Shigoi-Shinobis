@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- This is the Head Section -->
+    <head>
+
+        <!-- Meta Information for Search Engines -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <!-- Title of the Website -->
+        <title>Sugoi Shinobis</title>
+
+        <!-- CDN Link for Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+        <!-- Stylesheet Links -->
+        <link rel="stylesheet" href="css/styles.css">   <!-- Common Component Styling -->
+        <link rel="stylesheet" href="css/home.css">     <!-- Home Components Styling -->
+
+    </head>
+    
+    <!-- This is the Body Section -->
+    <body>
+
+        <div class="transition">
+            <div class="cover cover1"></div>
+            <div class="cover cover2"></div>
+            <div class="cover cover3"></div>
+        </div>
+    
+        <!-- Home Page -->
+        <section id="home">
+
+            <!-- Navbar Component -->
+            <section id="navbar">
+                <div class="logo">
+                    <input type="checkbox" name="" id="nav-toggler" class="fas fa-bars">   
+                    <nav class="navbar">
+                        <a href="#" data-text="home">Home</a>
+                        <a href="about.html" data-text="about">About</a>
+                        <a href="community.html" data-text="community">Community</a>
+                        <a href="collections.html" data-text="collections">Collections</a>
+                        <a href="#" data-text="contact">contact</a>
+                        <div class="background-image"></div>
+                    </nav> 
+                </div>
+                <div class="title">
+                    <img src="images/logo.png" alt="">
+                </div>
+            </section>
+
+            <!-- Home Content Component -->
+            <section id="Content" class="homeContent" style="width: 100%">
+                <div class="left">
+                    <img src="images/home_img.png" alt="">
+                </div>
+                <div class="right">
+                    <div class="heading">
+                        <p class="upHeading home-upHeading">
+                            Sugoi
+                        </p>
+                        <p class="downHeading home-downHeading">
+                            Shinobis
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="rbtnContainer">
+                    <a href="about.html" class="link">
+                        <button class="btn-rounded home-cursor">
+                            Tap
+                        </button>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Footer Component -->
+            <section id="footer">
+                <div class="socialIcons">
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-reddit-alien"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <div class="someLogo">
+                    <a href=""><i class="fa-solid fa-bars-staggered"></i></a>
+                </div>
+            </section>
+
+        </section>
+
+    </body>
+
+    <!--  -->
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
+    <script>
+        const link = document.querySelector(".link");
+        const transition = document.querySelector(".transition");
+        link.addEventListener("click", (e) => {
+            e.preventDefault();
+            transition.classList.add("slide");
+            setTimeout(() => {
+                window.location = link.href;
+            }, 900);
+        });
+    </script>
+
+    <script src="js/script.js"></script>
+    <script src="js/community.js"></script>
+
+</html>

@@ -1,0 +1,74 @@
+.collectionContent .left, .collectionContent .right{
+    display: flex;
+    flex-direction: column;
+    width: 50%
+}
+
+.collectionContent .left .heading .upHeading {
+    font-size: 200px;
+    justify-content: center;
+}
+
+.collectionContent .left .heading .downHeading {
+    font-size: 75px;
+    position: relative;
+    top: -15px;
+    justify-content: center;
+}
+
+.collectionContent .left .btnContainer {
+    position: relative;
+    width: max-content;
+}
+
+.collectionContent .right .cell {
+    width: 70%;
+    height: 400px;
+    margin: 0 15px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.collectionContent .right .cell img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.collectionContent .right .cell p {
+    position: relative;
+    top: -100px;
+    left: 20px;
+    font-weight: bold;
+    font-size: 60px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#collectionItem-1 {
+    background-image: url('../images/slider-bg-one.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#collectionItem-2 {
+    background-image: url('../images/slider-bg-two.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#collectionItem-3 {
+    background-image: url('../images/slider-bg-three.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.collectionItemContent p {
+    font-size: 275px;
+    font-weight: bolder;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+}

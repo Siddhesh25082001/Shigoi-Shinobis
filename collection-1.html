@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- This is the Head Section -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      
+        <!-- Title of the Website -->
+        <title>Sugoi Shinobis</title>
+
+        <!-- CDN Link for Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+        <!-- CDN Link for Carousel -->
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        
+        <!-- jQuery Script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <!-- Stylesheet Links -->
+        <link rel="stylesheet" href="css/styles.css">           <!-- Common Component Styling -->
+        <link rel="stylesheet" href="css/collection.css">       <!-- Home Components Styling -->
+
+    </head>
+    
+    <!-- This is the Body Section -->
+    <body>
+
+        <div class="transition">
+            <div class="cover cover1"></div>
+            <div class="cover cover2"></div>
+            <div class="cover cover3"></div>
+        </div>
+    
+        <!-- About Us Page -->
+        <section id="collectionItem-1">
+
+            <!-- Navbar Component -->
+            <section id="navbar">
+                <div class="logo">
+                    <input type="checkbox" name="" id="nav-toggler" class="fas fa-bars">   
+                    <nav class="navbar">
+                        <a href="home.html" data-text="home">Home</a>
+                        <a href="about.html" data-text="about">About</a>
+                        <a href="community.html" data-text="community">Community</a>
+                        <a href="collections.html" data-text="collections">Collections</a>
+                        <a href="#" data-text="contact">contact</a>
+                        <div class="background-image"></div>
+                    </nav> 
+                </div>
+                <div class="title">
+                    <img src="images/logo.png" alt="">
+                </div>
+            </section>
+
+            <!-- About Content Component -->
+            <section id="Content" class="collectionItemContent">
+                <p>01</p>
+            </section>
+
+            <!-- Footer Component -->
+            <section id="footer">
+                <div class="socialIcons">
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-reddit-alien"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <div class="someLogo">
+                    <a href=""><i class="fa-solid fa-bars-staggered"></i></a>
+                </div>
+            </section>
+
+        </section>
+
+    </body>
+
+    <script>
+        const link = document.querySelector(".link");
+        const transition = document.querySelector(".transition");
+        link.addEventListener("click", (e) => {
+            e.preventDefault();
+            transition.classList.add("slide");
+            setTimeout(() => {
+                window.location = link.href;
+            }, 900);
+        });
+    </script>
+
+    <script src="js/script.js"></script>
+    <script src="js/community.js"></script>
+
+</html>

@@ -1,0 +1,54 @@
+/* #community {
+    background-image: url('../images/join-our-community-dark.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.communityContent {
+    flex-direction: column;
+}
+
+.communityBtns .left {
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+
+.communityBtns .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3rem;
+    width: 70%;
+}
+
+.communityBtns {
+    width: 90%;
+    margin: 0 auto;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.communityBtns .btnContainer {
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
+.btn-large span {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 36px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.btn-large span .fa-brands {
+    font-size: 48px;
+}
