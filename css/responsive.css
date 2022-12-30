@@ -1,0 +1,25 @@
+@media screen and (max-width: 1024px) {
+    nav .logo { width: 30% }
+    nav .logo img { width: 45% }
+    nav .menu { width: 70% }
+    .collectionContent .left .heading .upHeading { font-size: 210px; }
+    .collectionContent .left .heading .downHeading { font-size: 65px; }
+    .communityContent .heading .upHeading { font-size: 95px; bottom: -50px; }
+    .communityContent .heading .downHeading { font-size: 80px; }
+    .collectionContent .right { margin-bottom: 1rem; }
+    .btn-large { min-width: 0px; }
+    .btn-large span { font-size: 25px; }
+}
+
+@media screen and (max-width: 768px) {
+    nav .logo { width: 20% }
+    nav .logo img { width: 75% }
+    nav .menu { width: 80% }
+    nav.black ul li { padding: 10px; }
+    .homeContent { width: 100%; flex-direction: column; } 
+    .secContent { flex-direction: column; gap: 0; }
+    .sameStyle .right { width: 100%; } 
+    .collectionContent .right { margin-bottom: 1.5rem; }
+    .communityContent .left { width: 80%; }
+    .communityContent .heading .upHeading, .downHeading { justify-content: center; }
+}

@@ -1,11 +1,16 @@
-/* #community {
-    background-image: url('../images/join-our-community-dark.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-
 .communityContent {
+    display: flex;
+    align-items: center;
+}
+
+.communityContent .left {
+    display: flex;
+    width: 40%;
+}
+
+.communityContent .right {
+    display: flex;
+    width: 60%;
     flex-direction: column;
 }
 
@@ -13,6 +18,21 @@
     display: flex;
     align-items: center;
     width: 30%;
+}
+
+.communityContent .heading .upHeading {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 140px;
+    position: relative;
+    bottom: -80px;
+}
+
+.communityContent .heading .downHeading {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 125px;
+    position: relative;
 }
 
 .communityBtns .right {
@@ -24,11 +44,9 @@
 }
 
 .communityBtns {
-    width: 90%;
-    margin: 0 auto;
-    height: 20%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 2rem;
 }
@@ -36,6 +54,15 @@
 .communityBtns .btnContainer {
     border: 1px solid #fff;
     padding: 10px;
+}
+
+.btn-large {
+    color: #fff;
+    background: rgb;
+    background: rgb(3, 3, 3);
+    font-size: 36px;
+    padding: 10px 20px;
+    /* min-width: 300px; */
 }
 
 .btn-large span {

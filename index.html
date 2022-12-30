@@ -20,13 +20,16 @@
         
         <!-- jQuery Script -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
         <!-- Stylesheet Links -->
-        <link rel="stylesheet" href="css/styles.css">        <!-- Common Component Styling -->
         <link rel="stylesheet" href="css/home.css">          <!-- Home Components Styling -->
+        <link rel="stylesheet" href="css/styles.css">        <!-- Common Component Styling -->
         <link rel="stylesheet" href="css/about.css">         <!-- Home Components Styling -->
         <link rel="stylesheet" href="css/collection.css">    <!-- Home Components Styling -->
         <link rel="stylesheet" href="css/community.css">     <!-- Home Components Styling -->
+        <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="css/responsive.css">
 
     </head>
     
@@ -36,47 +39,40 @@
         <!-- Home Page -->
         <section id="home">
 
-            <!-- Navbar Component -->
-            <section 
-                style="
-                    background-image: url('images/sugoii-shinobi-website.jpg');
-                    background-position: center;
-                    background-size: cover;"
-            >
-                <section id="navbar">
-                    <div class="title">
+            <!-- Banner Component -->
+            <section id="banner">  
+                <nav>
+                    <div class="logo">
                         <img src="images/logo.png" alt="">
                     </div>
-                </section>
-    
-                <!-- Home Content Component -->
-                <section id="home" class="secContent homeContent" style="height: 85vh;">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#collections">Collections</a></li>
+                            <li><a href="#community">Community</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <section class="homeContent secContent">
                     <div class="left">
-                        <!-- <img src="images/home_img.png" alt=""> -->
+                        <div style = "display: flex; flex-direction: column; gap: 2rem;">
+                            <p class="homeTitle"><span class="auto-input"></span></p>
+                            <p class="homeSubTitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam inventore consequuntur minus, voluptate repudiandae doloremque sunt dolorem tempore ad omnis adipisci eveniet earum possimus sapiente aliquid ex. Praesentium, expedita labore.</p>
+                            <p class="homeSubTitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam inventore consequuntur minus, voluptate repudiandae doloremque sunt dolorem tempore ad omnis adipisci eveniet earum possimus sapiente aliquid ex. Praesentium, expedita labore.</p>
+                        </div>
+                        <button class="explore">Explore More &rightarrow;</button>
                     </div>
                     <div class="right">
-                        <div class="heading">
-                            <p class="upHeading home-upHeading">
-                                Sugoi
-                            </p>
-                            <p class="downHeading home-downHeading">
-                                Shinobis
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="rbtnContainer">
-                        <a href="#about">
-                            <button class="btn-rounded home-cursor">
-                                Tap
-                            </button>
-                        </a>
+                        <video src="images/Header-Video.mp4" autoplay muted loop width="100%" height="100%" style="border-radius: 25px;"></video>
                     </div>
                 </section>
             </section>
 
             <!-- About Content Component -->
-            <section id="about" class="secContent aboutContent">
+            <section id="about" class="secContent aboutContent sameStyle">
                 <div class="left">
                     <div class="heading">
                         <p class="upHeading">
@@ -86,43 +82,25 @@
                             Us
                         </p>
                     </div>
-                    <div class="btnContainer">
-                        <div class="rbtnContainer">
-                            <a href="#collections">
-                                <button class="btn-rounded">
-                                    <i class="fa-solid fa-angle-down"></i>
-                                </button>
-                            </a>
-                        </div>
-                    </div>
                 </div>
                 <div class="right">
                     <p>
                         Oui Oui Oui!
-                        <br>
+                    </p>
+                    <p>
                         Welcome to the Sugoi Shinobis!
-                        <br>
-                        That's right. Sugoi - We are a tribe
-                        <br>
-                        of badass shinobis ready to take over the $Solana!
-                        <br>
+                    </p>
+                    <p>
+                        That's right. Sugoi - We are a tribe of badass shinobis ready to take over the Solana!
+                    </p>
+                    <p>
                         Every Shinobi has a goal in life, ours is to create a collaborative business in the anime industry and reward our holders with some real utility.
                     </p>
-                    <div class="moreDetails">
-                        <p>Know More</p>
-                        <div class="rbtnContainer">
-                            <a href="#collections">
-                                <button class="btn-rounded">
-                                    <i class="fa-solid fa-angle-right"></i>
-                                </button>
-                            </a>
-                        </div>
-                    </div>
+                    <button class="explore">Explore More &rightarrow;</button>
                 </div>
             </section>
 
-            <!-- Collections Content Component -->
-            <section id="collections" class="secContent collectionContent">
+            <section id="collections" class="secContent collectionContent sameStyle">
                 <div class="left">
                     <div class="heading">
                         <p class="upHeading">
@@ -131,15 +109,6 @@
                         <p class="downHeading">
                             Collection
                         </p>
-                    </div>
-                    <div class="btnContainer">
-                        <div class="rbtnContainer">
-                            <a href="#community">
-                                <button class="btn-rounded">
-                                    <i class="fa-solid fa-angle-down"></i>
-                                </button>
-                            </a>
-                        </div>
                     </div>
                 </div>
                 <div class="right">
@@ -167,27 +136,21 @@
             </section>
 
             <!-- Community Content Component -->
-            <section id="community" class="secContent communityContent">
-                <div class="heading">
-                    <p class="upHeading">
-                        Join Our
-                    </p>
-                    <p class="downHeading">
-                        Community
-                    </p>
+            <section id="community" class="secContent communityContent sameStyle">
+                <div class="left">
+                    <img src="images/Join.png" alt="" width="100%" height="100%">
                 </div>
-               
-                <div class="communityBtns">
-                    <div class="left">
-                        <div class="rbtnContainer">
-                            <a href="#">
-                                <button class="btn-rounded">
-                                    <i class="fa-solid fa-angle-down"></i>
-                                </button>
-                            </a>
-                        </div>
+                <div class="right">
+                    <div class="heading">
+                        <p class="upHeading">
+                            Join Our
+                        </p>
+                        <p class="downHeading">
+                            Community
+                        </p>
                     </div>
-                    <div class="right">
+                   
+                    <div class="communityBtns">
                         <div class="btnContainer">
                             <a href="#community">
                                 <button class="btn-large">
@@ -208,40 +171,130 @@
                                 </button>
                             </a>
                         </div>
+                    </div> 
+                </div>
+            </section>
+
+            <footer id="contact">
+                <div class="main-content">
+                    <div class="left box">
+                        <h2>About us</h2>
+                        <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quae, odit, perferendis, illum aliquam maiores vel quisquam temporibus ducimus enim debitis quasi corporis voluptatum laborum minus nemo praesentium. Excepturi, voluptates?</p>
+                        <div class="social">
+                            <a href="#"><span class="fab fa-facebook-f"></span></a>
+                            <a href="#"><span class="fab fa-twitter"></span></a>
+                            <a href="#"><span class="fab fa-instagram"></span></a>
+                            <a href="#"><span class="fab fa-youtube"></span></a>
+                        </div>
+                        </div>
                     </div>
-                </div> 
-            </section>
 
-            <!-- Footer Component -->
-            <section id="footer">
-                <div class="socialIcons">
-                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-reddit-alien"></i></a>
-                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-                </div>
-                <div class="someLogo">
-                    <a href="#"><i class="fa-solid fa-bars-staggered"></i></a>
-                </div>
-            </section>
+                    <div class="center box">
+                        <h2>Address</h2>
+                        <div class="content">
+                            <div class="place">
+                                <span class="fas fa-map-marker-alt"></span>
+                                <span class="text">Mumbai, Maharashtra, India</span>
+                            </div>
+                            <div class="phone">
+                                <span class="fas fa-phone-alt"></span>
+                                <span class="text"><a href="tel:+7710914875">7710914875</a></span>
+                            </div>
+                            <div class="email">
+                                <span class="fas fa-envelope"></span>
+                                <span class="text">siddheshmane025@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="right box">
+                        <h2>Contact us</h2>
+                        <div class="content">
+                            <form onSubmit = "sendEmail(); reset(); return false;">
+                                <div class="name">
+                                    <div class="text">Name *</div>
+                                    <input type="text" required id="name">
+                                </div>
+                                <div class="email">
+                                    <div class="text">Email *</div>
+                                    <input type="email" required id="email">
+                                </div>
+                                <div class="msg">
+                                    <div class="text" id="message">Message *</div>
+                                    <textarea rows="2" cols="25" required id="msg"></textarea>
+                                </div>
+                                <div class="btn">
+                                    <button type="submit">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottom">
+                    <center>
+                        <span class="credit">Created By <a href="#">Siddhesh Mane</a> | </span>
+                        <span class="far fa-copyright"></span><span> 2022 All rights reserved.</span>
+                    </center>
+                </div>
+            </footer>
         </section>
 
     </body>
 
     <!--  -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/script.js"></script>
     <script src="js/community.js"></script>
+
+    <script>
+        var typed = new Typed(".auto-input", { strings: ["Welcome to Sugoi Shinobis"], typedSpeed: 200, backSpeed: 100, loop: true});
+    </script>
+
+    <script>
+
+        function sendEmail() {
+
+            const userName = document.getElementById("name").value;
+            const userEmail = document.getElementById("email").value;
+            const userMsg = document.getElementById("msg").value;
+
+            console.log(userName, userEmail, userMsg);
+
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "siddheshmane025@gmail.com",
+                Password : "siddhesh",
+                To : 'siddheshmane025@gmail.com',
+                From : userEmail,
+                Subject : "New User Message",
+                Body : userMsg
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
+
+    <script>
+        $(window).scroll(function(){
+            if($(window).scrollTop()){
+                $("nav").addClass("black");
+            }
+            else {
+                $("nav").removeClass("black");
+            }
+        })
+    </script>
 
     <script type="text/javascript">
 
         var $carousel = $('.main-carousel').flickity({
             imagesLoaded: true,
             percentPosition: false,
-            prevNextButtons: false,
-            pageDots: false,
+            prevNextButtons: true,
+            pageDots: true,
         });
 
         var $imgs = $carousel.find('.cell img');
