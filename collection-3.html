@@ -22,48 +22,68 @@
         <!-- Stylesheet Links -->
         <link rel="stylesheet" href="css/styles.css">           <!-- Common Component Styling -->
         <link rel="stylesheet" href="css/collection.css">       <!-- Home Components Styling -->
+        <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="css/about.css">
 
     </head>
     
     <!-- This is the Body Section -->
     <body>
-    
-        <!-- About Us Page -->
-        <section id="collectionItem-3">
 
-            <!-- Navbar Component -->
-            <section id="navbar">
-                <div class="logo">
-                    <a href="index.html">
-                        <i class="fas fa-arrow-left" style = "font-size: 32px;"></i>
-                    </a>
-                </div>
-                <div class="title">
-                    <img src="images/logo.png" alt="">
-                </div>
-            </section>
+        <div class="transition">
+            <div class="cover cover1"></div>
+            <div class="cover cover2"></div>
+            <div class="cover cover3"></div>
+        </div>
 
-            <!-- About Content Component -->
-            <section id="Content" class="collectionItemContent">
-            </section>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#collections">Collections</a></li>
+                    <li><a href="index.html#community">Community</a></li>
+                    <li><a href="index.html#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
 
-            <!-- Footer Component -->
-            <section id="footer">
-                <div class="socialIcons">
-                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-reddit-alien"></i></a>
-                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        <div class="collection-info">
+            <div class="left">
+                <div class="phaseContainer item">
+                    <div class="phaseNumber" style="font-size: 96px;">
+                        Volaris
+                    </div>
+                    <div class="phaseDetails">
+                        <ul>
+                            <p style="color: gold; font-family: Lobster; font-size: 36px; text-align: center;">A Warrior clan !!!</p>
+                            <p style="text-align: center">They are wind wielders, swift in fighting and quick in their attacks</p>
+                            <p style="text-align: center">They can manipulate air, wind and gas to their advantage. Their attacks are swift and neat</p>
+                        </ul>
+                    </div>
                 </div>
-                <div class="someLogo">
-                    <a href=""><i class="fa-solid fa-bars-staggered"></i></a>
-                </div>
-            </section>
-
-        </section>
+            </div>
+            <div class="right" style="border: 1px solid; border-radius: 50%; box-shadow: 0px 0px 15px 2px lightskyblue;" >
+                <img src="images/slider-cover-three.png" alt="" width="100%" height="100%" style="border-radius: 50%;">
+            </div>
+        </div>
 
     </body>
+
+    <script>
+        const link = document.querySelector(".link");
+        const transition = document.querySelector(".transition");
+        link.addEventListener("click", (e) => {
+            e.preventDefault();
+            transition.classList.add("slide");
+            setTimeout(() => {
+                window.location = link.href;
+            }, 900);
+        });
+    </script>
 
     <script src="js/script.js"></script>
     <script src="js/community.js"></script>

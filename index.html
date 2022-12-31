@@ -12,6 +12,8 @@
         <!-- Title of the Website -->
         <title>Sugoi Shinobis</title>
 
+        <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+
         <!-- CDN Link for Font Awesome Icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
 
@@ -30,11 +32,17 @@
         <link rel="stylesheet" href="css/community.css">     <!-- Home Components Styling -->
         <link rel="stylesheet" href="css/contact.css">
         <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/toast.css">
 
     </head>
     
     <!-- This is the Body Section -->
     <body>
+
+        <ul class="notifications"></ul>
+        <!-- <div class="buttons">
+            <button class="btn" id="success">Success</button>
+        </div> -->
     
         <!-- Home Page -->
         <section id="home">
@@ -96,7 +104,9 @@
                     <p>
                         Every Shinobi has a goal in life, ours is to create a collaborative business in the anime industry and reward our holders with some real utility.
                     </p>
-                    <button class="explore">Explore More &rightarrow;</button>
+                    <a href="about.html">
+                        <button class="explore">Want to know more about us &rightarrow;</button>
+                    </a>
                 </div>
             </section>
 
@@ -260,19 +270,56 @@
             const userName = document.getElementById("name").value;
             const userEmail = document.getElementById("email").value;
             const userMsg = document.getElementById("msg").value;
+            const notifications = document.querySelector(".notifications")
 
-            console.log(userName, userEmail, userMsg);
+            const toastDetails = {
+                timer: 5000,
+                success: {
+                    icon: 'fa-circle-check',
+                    text: 'Email sent successfully',
+                },
+            }
+            const removeToast = (toast) => {
+                toast.classList.add("hide");
+                if(toast.timeoutId) clearTimeout(toast.timeoutId);  // Clearing the timeout for the toast
+                setTimeout(() => toast.remove(), 500);              // Removing the toast after 500ms
+            }
+            const createToast = (id) => {
+                
+                // Getting the icon and text for the toast based on the id passed
+                const { icon, text } = toastDetails[id];
+                const toast = document.createElement("li");         // Creating a new 'li' element for the toast
+                toast.className = `toast ${id}`;                    // Setting the classes for the toast
+                
+                // Setting the inner HTML for the toast
+                toast.innerHTML = `
+                                    <div class="column">
+                                        <i class="fa-solid ${icon}"></i>
+                                        <span>${text}</span>
+                                    </div>
+                                    <i class="fa-solid fa-xmark" onclick="removeToast(this.parentElement)"></i>`;
+                notifications.appendChild(toast); // Append the toast to the notification ul
+                
+                // Setting a timeout to remove the toast after the specified duration
+                toast.timeoutId = setTimeout(() => removeToast(toast), toastDetails.timer);
+            }
 
+            const mailBody =    `
+                                    <div>
+                                        <p><b>User Name: ${userName}</b></p>
+                                        <p><b>User Name: ${userEmail}</b></p>
+                                        <p><b>User Name: ${userMsg}</b></p>
+                                    </div>
+                                `
+            
             Email.send({
-                Host : "smtp.elasticemail.com",
-                Username : "siddheshmane025@gmail.com",
-                Password : "siddhesh",
+                SecureToken: "9c79b307-ab02-4fe7-a2ba-52be4b4756b8",
                 To : 'siddheshmane025@gmail.com',
                 From : userEmail,
                 Subject : "New User Message",
-                Body : userMsg
+                Body :  mailBody
             }).then(
-                message => alert(message)
+                message => createToast(('success'))
             );
         }
     </script>

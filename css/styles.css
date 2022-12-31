@@ -206,3 +206,10 @@ nav.black a:hover {
     color: #fff;
     transform: rotateZ(-90deg);
 }
+
+.alert-container {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    z-index: 10000000;
+}

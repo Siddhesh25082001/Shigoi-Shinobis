@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 .aboutContent .left {
     display: flex;
     flex-direction: column;
@@ -32,4 +34,460 @@
     flex-direction: column;
     gap: 1rem;
     font-size: 20px;
+}
+
+.aboutBanner {
+    height: 50vh;
+    background: url(../images/sugoii-shinobi-website.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.aboutTitle {
+    width: 100%;
+    height: calc(50vh - 110px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 110px;
+}
+
+.aboutTitle h1 {
+    font-size: 96px;
+    letter-spacing: 5px;
+    font-family: 'Lobster', sans-serif;
+    color: #fff;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    color: #fff;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.info .base {
+    display: flex;
+    gap: 2rem;
+    font-size: 24px;
+    font-family: cursive;
+    width: 100%;
+}
+
+.info .first {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.info .second {
+    padding: 50px 100px;
+    background: #fff;
+    color: #111;
+    border-radius: 50px;
+}
+
+.info .second .left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+}
+
+.info .second .right {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+/*----------------genealogy-scroll----------*/
+
+.genealogy-scroll::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+}
+
+.genealogy-scroll::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #e4e4e4;
+}
+
+.genealogy-scroll::-webkit-scrollbar-thumb {
+    background: #212121;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.genealogy-scroll::-webkit-scrollbar-thumb:hover {
+    background: #d5b14c;
+    transition: 0.5s;
+}
+
+/*----------------genealogy-tree----------*/
+.genealogy-body{
+    white-space: nowrap;
+    overflow-y: hidden;
+    padding: 25px 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genealogy-tree{
+    display: flex;
+    width: 100%;
+}
+
+.genealogy-tree ul {
+    position: relative;
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.genealogy-tree li {
+    float: left; 
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    padding: 20px 5px 0 5px;
+    width: 100%;
+}
+
+.genealogy-tree li::before, .genealogy-tree li::after{
+    content: '';
+    position: absolute; 
+    top: 0; 
+    right: 50%;
+    border-top: 2px solid #ccc;
+    width: 50%; 
+    height: 18px;
+}
+
+.genealogy-tree li::after{
+    right: auto; left: 50%;
+    border-left: 2px solid #ccc;
+}
+
+.genealogy-tree li:only-child::after, .genealogy-tree li:only-child::before {
+    display: none;
+}
+
+.genealogy-tree li:only-child{ 
+    padding-top: 0;
+}
+
+.genealogy-tree li:first-child::before, .genealogy-tree li:last-child::after{
+    border: 0 none;
+}
+
+.genealogy-tree li:last-child::before{
+    border-right: 2px solid #ccc;
+    border-radius: 0 5px 0 0;
+    -webkit-border-radius: 0 5px 0 0;
+    -moz-border-radius: 0 5px 0 0;
+}
+
+.genealogy-tree li:first-child::after{
+    border-radius: 5px 0 0 0;
+    -webkit-border-radius: 5px 0 0 0;
+    -moz-border-radius: 5px 0 0 0;
+}
+
+.genealogy-tree ul ul::before{
+    content: '';
+    position: absolute; top: 0; left: 50%;
+    width: 0; height: 20px;
+}
+
+.genealogy-tree li a{
+    text-decoration: none;
+    font-family: arial, verdana, tahoma;
+    font-size: 14px;
+    display: inline-block;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.genealogy-tree li a:hover+ul li::after, 
+.genealogy-tree li a:hover+ul li::before, 
+.genealogy-tree li a:hover+ul::before, 
+.genealogy-tree li a:hover+ul ul::before{
+    border-color:  #fbba00;
+}
+
+/*--------------memeber-card-design----------*/
+.member-view-box{
+    padding: 20px;
+}
+
+.member-image, .member-details{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.member-image img{
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    background-color :#000;
+    z-index: 1;
+}
+
+.use-funds {
+    font-family: 'Lobster';
+    justify-content: center;
+    text-align: center;
+    font-size: 48px;
+    color: gold;
+    letter-spacing: 2px;
+}
+
+.third {
+    flex-direction: column;
+    padding: 50px 20px;
+    border: 1px solid;
+    border-radius: 50px;
+    box-shadow: 0px 0px 15px 2px lightskyblue;
+}
+
+.fourth {
+    flex-direction: column;
+    padding: 0 50px;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.phase {
+    font-size: 1em;
+    line-height: 1.75em;
+    border-top: 3px solid;
+    border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
+    border-image-slice: 1;
+    border-width: 3px;
+    margin: 0;
+    padding: 40px;
+    counter-increment: section;
+    position: relative;
+}
+
+.phase:before {
+    content: counter(section);
+    position: absolute;
+    border-radius: 50%;
+    padding: 10px;
+    height: 1.25em;
+    width: 1.25em;
+    background-color: #fff;
+    text-align: center;
+    line-height: 1.25em;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #111;
+}
+  
+.phase:nth-child(odd) {
+    border-right: 3px solid;
+    padding-left: 0;
+}
+  
+.phase:nth-child(odd):before {
+    left: 100%;
+    margin-left: -20px;
+    margin-top: 120px;
+}
+  
+.phase:nth-child(even) {
+    border-left: 3px solid;
+    padding-right: 0;
+}
+  
+.phase:nth-child(even):before {
+    right: 100%;
+    margin-right: -20px;
+    margin-top: 150px;
+}
+
+.phase:first-child {
+    border-top: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+  
+.phase:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.phaseContainer {
+    border: 1px solid;
+    border-radius: 50px;
+    box-shadow: 0px 0px 15px 2px lightskyblue;
+    padding: 40px 60px;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    width: 80%;
+}
+
+.phaseContainer .phaseNumber {
+    font-size: 48px;
+    padding-bottom: 10px;
+    border-bottom: 5px solid tomato;
+    width: max-content;
+    font-family: 'Lobster'
+}
+
+.phaseContainer .phaseDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.phaseContainer .phaseDetails p {
+    font-size: 18px;
+}
+
+.phaseContainer .phaseDetails ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: inside;
+    font-size: 18px;
+}
+
+.phaseContainer .phaseDetails ul li {
+    line-height: 2rem;
+}
+
+.roadmap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.roadmap img {
+    width: 200px;
+    height: 100px;
+}
+
+.odd { margin: 0 0 0 auto; }
+.even { margin: 0 auto 0 0; }
+
+.fifth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.fifth .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+
+.fifth .container .card {
+    position: relative;
+    min-width: 340px;
+    height: 500px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+        inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+        5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin: 30px;
+    transition: 0.5s;
+}
+
+.fifth .container .card .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: rgb(173, 77, 77);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.fifth .container .card .box:hover {
+    transform: translateY(-50px);
+}
+
+.fifth .container .card .box:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.fifth .container .card .box .content {
+    padding: 20px;
+    text-align: center;
+}
+
+.fifth .container .card .box .content h2 {
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 8rem;
+    color: rgba(255, 255, 255, 0.1);
+}
+
+.fifth .container .card .box .content h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    z-index: 1;
+    transition: 0.5s;
+    margin-bottom: 15px;
+}
+
+.fifth .container .card .box .content p {
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.fifth .container .card .box .content .content-p {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 12px;
+}
+
+.utility {
+    width: 100%;
+    font-family: 'Poppins';
 }

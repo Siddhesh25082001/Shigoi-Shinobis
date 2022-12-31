@@ -7,22 +7,22 @@ footer{
     background-image: radial-gradient(rgba(0, 20, 30, 1) 40%, rgb(3, 3, 3));
 }
 
-.main-content{
+footer .main-content{
     display: flex;
     padding: 1rem 2rem;
 }
 
-.main-content .box{
+footer .main-content .box{
     flex-basis: 50%;
     padding: 10px 20px;
 }
 
-.box h2{
+footer .box h2{
     font-size: 1.125rem;
     font-weight: 600;
 }
 
-.box .content{
+footer .box .content{
     margin: 20px 0 0 0;
     position: relative;
 }
@@ -36,7 +36,7 @@ footer{
     background: #1a1a1a;
 }
 
-.box .content:after{
+footer .box .content:after{
     position: absolute;
     content: '';
     height: 2px;
