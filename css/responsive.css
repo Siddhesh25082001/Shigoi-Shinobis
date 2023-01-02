@@ -1,3 +1,4 @@
+/* 1024 - Small Laptop Screen */
 @media screen and (max-width: 1024px) {
     nav .logo { width: 30% }
     nav .logo img { width: 45% }
@@ -14,6 +15,7 @@
     .member-image img { width: 35px; height: 35px; } 
 }
 
+/* 768 - Tablet Screen */
 @media screen and (max-width: 768px) {
     nav .logo { width: 20% }
     nav .logo img { width: 75% }
@@ -33,7 +35,8 @@
     .fifth .container .card { min-width: 300px; }
 }
 
-@media screen and (max-width: 425px) {
+/* 426 0 Large Mobile Screen */
+@media screen and (max-width: 426px) {
 
     .roadmap img { width: 40px; height: 20px; }
     .info .second .right img { width: 100%; height: 100%; }
@@ -58,11 +61,11 @@
     .info .base { font-size: 10px; width: 80%; margin: 0 auto; gap: 1rem; }
     .info .second { padding: 20px;  flex-direction: column-reverse; }
     .info .second .left { gap: 1rem; }
-    .second-p { font-size: 18px; }
-    .second-p2 { font-size: 10px; }
+    .second-content { font-size: 18px; }
+    .second-content { font-size: 10px; }
 
     .phaseContainer { padding: 20px; width: 100%; gap: 1rem; }
-    .use-funds { font-size: 18px; }
+    .baseTitle { font-size: 18px; }
     .phaseContainer .phaseDetails { gap: 1rem; }
     .phaseContainer .phaseDetails ul { font-size: 8px; gap: 1rem }
     .phaseContainer .phaseDetails ul li { line-height: initial; }
@@ -98,7 +101,7 @@
     .phase:nth-child(odd):before { margin-right: -15px; } 
 }
 
-
+/* 320 - Small Mobile Screen */
 @media screen and (max-width: 320px) {
 
     .roadmap img { width: 40px; height: 20px; }
@@ -124,11 +127,11 @@
     .info .base { font-size: 10px; width: 80%; margin: 0 auto; gap: 1rem; }
     .info .second { padding: 20px;  flex-direction: column-reverse; }
     .info .second .left { gap: 1rem; }
-    .second-p { font-size: 18px; }
-    .second-p2 { font-size: 10px; }
+    .second-content { font-size: 18px; }
+    .second-content { font-size: 10px; }
 
     .phaseContainer { padding: 20px; width: 100%; gap: 1rem; }
-    .use-funds { font-size: 18px; }
+    .baseTitle { font-size: 18px; }
     .phaseContainer .phaseDetails { gap: 1rem; }
     .phaseContainer .phaseDetails ul { font-size: 8px; gap: 1rem }
     .phaseContainer .phaseDetails ul li { line-height: initial; }

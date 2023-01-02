@@ -12,7 +12,7 @@
         <!-- Title of the Website -->
         <title>Sugoi Shinobis</title>
 
-        <link rel="shortcut icon" target = "_blank" href="images/favicon-img.png" type="image/x-icon">
+        <link rel="shortcut icon" target = "_blank" href="images/website-favicon.png" type="image/x-icon">
 
         <!-- CDN Link for Font Awesome Icons -->
         <link rel="stylesheet" target = "_blank" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
@@ -24,12 +24,18 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
+        <!-- Carousel Script -->
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        
+        <!-- SMTP Mail Service Script -->
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+
         <!-- Stylesheet Links -->
-        <link rel="stylesheet" href="css/home.css">          <!-- Home Components Styling -->
-        <link rel="stylesheet" href="css/styles.css">        <!-- Common Component Styling -->
-        <link rel="stylesheet" href="css/about.css">         <!-- Home Components Styling -->
-        <link rel="stylesheet" href="css/collection.css">    <!-- Home Components Styling -->
-        <link rel="stylesheet" href="css/community.css">     <!-- Home Components Styling -->
+        <link rel="stylesheet" href="css/home.css">          
+        <link rel="stylesheet" href="css/styles.css">        
+        <link rel="stylesheet" href="css/about.css">         
+        <link rel="stylesheet" href="css/collection.css">    
+        <link rel="stylesheet" href="css/community.css">     
         <link rel="stylesheet" href="css/contact.css">
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" href="css/toast.css">
@@ -40,10 +46,7 @@
     <body>
 
         <ul class="notifications"></ul>
-        <!-- <div class="buttons">
-            <button class="btn" id="success">Success</button>
-        </div> -->
-    
+        
         <!-- Home Page -->
         <section id="home">
 
@@ -51,7 +54,7 @@
             <section id="banner">  
                 <nav>
                     <div class="logo">
-                        <img src="images/logo.png" alt="">
+                        <img src="images/website-logo.png" alt="">
                     </div>
                     <div class="menu">
                         <ul>
@@ -67,44 +70,32 @@
                 <section class="homeContent secContent">
                     <div class="left">
                         <div style = "display: flex; flex-direction: column; gap: 2rem;">
-                            <p class="homeTitle"><span class="auto-input"></span></p>
+                            <p class="homeTitle"><span class="welcome-input"></span></p>
                             <p class="homeSubTitle">We are a startup with roots in India, and we want to rule the anime industry while forging a solid community.</p>
                             <p class="homeSubTitle">We are launching our collection of 3333 NFTs, which will offer our holders with amazing utilities and enable us to raise money in order to develop a successful business.</p>
                         </div>
                         <a href="#about"><button class="explore">Explore More &rightarrow;</button></a>
                     </div>
                     <div class="right">
-                        <!-- <video src="images/Header-Video.mp4" autoplay muted loop width="100%" height="100%" style="border-radius: 25px;"></video> -->
-                        <img src="images/Header-Gif.gif" alt="" width="100%" height="100%" style="border-radius: 25px;">
+                        <img src="images/website-banner-gif.gif" alt="" width="100%" height="100%" style="border-radius: 25px;">
                     </div>
                 </section>
+
             </section>
 
             <!-- About Content Component -->
             <section id="about" class="secContent aboutContent sameStyle">
                 <div class="left">
                     <div class="heading">
-                        <p class="upHeading">
-                            About
-                        </p>
-                        <p class="downHeading">
-                            Us
-                        </p>
+                        <p class="upHeading">About</p>
+                        <p class="downHeading">Us</p>
                     </div>
                 </div>
                 <div class="right">
-                    <p>
-                        Oui, Oui, Oui!
-                    </p>
-                    <p>
-                        Greetings from The Sugoi Shinobis!
-                    </p>
-                    <p>
-                        That's right - Sugoi: We are a tribe of fierce shinobis eager to seize power!
-                    </p>
-                    <p>
-                        Every Shinobi has a life purpose, ours is to build a real company in the anime sector and provide our holders with some useful utilities.
-                    </p>
+                    <p>Oui, Oui, Oui!</p>
+                    <p>Greetings from The Sugoi Shinobis!</p>
+                    <p>That's right - Sugoi: We are a tribe of fierce shinobis eager to seize power!</p>
+                    <p>Every Shinobi has a life purpose, ours is to build a real company in the anime sector and provide our holders with some useful utilities.</p>
                     <a target = "_blank" href="about.html">
                         <button class="explore">Want to know more about us &rightarrow;</button>
                     </a>
@@ -114,12 +105,8 @@
             <section id="collections" class="secContent collectionContent sameStyle">
                 <div class="left">
                     <div class="heading">
-                        <p class="upHeading">
-                            Our
-                        </p>
-                        <p class="downHeading">
-                            Collection
-                        </p>
+                        <p class="upHeading">Our</p>
+                        <p class="downHeading">Collection</p>
                     </div>
                 </div>
                 <div class="right">
@@ -149,16 +136,12 @@
             <!-- Community Content Component -->
             <section id="community" class="secContent communityContent sameStyle">
                 <div class="left">
-                    <img src="images/Join.png" alt="" width="100%" height="100%">
+                    <img src="images/join-icon.png" alt="" width="100%" height="100%">
                 </div>
                 <div class="right">
                     <div class="heading">
-                        <p class="upHeading">
-                            Join Our
-                        </p>
-                        <p class="downHeading">
-                            Community
-                        </p>
+                        <p class="upHeading">Join Our</p>
+                        <p class="downHeading">Community</p>
                     </div>
                    
                     <div class="communityBtns">
@@ -217,7 +200,7 @@
                     <div class="right box">
                         <h2>Contact us</h2>
                         <div class="content">
-                            <form onSubmit = "sendEmail(); reset(); return false;">
+                            <form onsubmit="sendEmail(); reset(); return false;">
                                 <div class="name">
                                     <div class="text">Name *</div>
                                     <input type="text" required id="name">
@@ -231,7 +214,7 @@
                                     <textarea rows="2" cols="25" required id="msg"></textarea>
                                 </div>
                                 <div class="btn">
-                                    <button type="submit">Send</button>
+                                    <button type="submit" class="btn-submit">Send</button>
                                 </div>
                             </form>
                         </div>
@@ -245,116 +228,28 @@
                     </center>
                 </div>
             </footer>
+            
         </section>
 
     </body>
 
-    <!--  -->
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/community.js"></script>
+    <!-- Link to JS Scripts -->
+    <script src="js/slider-carousel.js"></script>
+    <script src="js/send-email.js"></script>
 
-    <script>
-        var typed = new Typed(".auto-input", { strings: ["Welcome to Sugoi Shinobis"], typedSpeed: 200, backSpeed: 100, loop: true});
-    </script>
-
-    <script>
-
-        function sendEmail() {
-
-            const userName = document.getElementById("name").value;
-            const userEmail = document.getElementById("email").value;
-            const userMsg = document.getElementById("msg").value;
-            const notifications = document.querySelector(".notifications")
-
-            const toastDetails = {
-                timer: 5000,
-                success: {
-                    icon: 'fa-circle-check',
-                    text: 'Email sent successfully',
-                },
-            }
-            const removeToast = (toast) => {
-                toast.classList.add("hide");
-                if(toast.timeoutId) clearTimeout(toast.timeoutId);  // Clearing the timeout for the toast
-                setTimeout(() => toast.remove(), 500);              // Removing the toast after 500ms
-            }
-            const createToast = (id) => {
-                
-                // Getting the icon and text for the toast based on the id passed
-                const { icon, text } = toastDetails[id];
-                const toast = document.createElement("li");         // Creating a new 'li' element for the toast
-                toast.className = `toast ${id}`;                    // Setting the classes for the toast
-                
-                // Setting the inner HTML for the toast
-                toast.innerHTML = `
-                                    <div class="column">
-                                        <i class="fa-solid ${icon}"></i>
-                                        <span>${text}</span>
-                                    </div>
-                                    <i class="fa-solid fa-xmark" onclick="removeToast(this.parentElement)"></i>`;
-                notifications.appendChild(toast); // Append the toast to the notification ul
-                
-                // Setting a timeout to remove the toast after the specified duration
-                toast.timeoutId = setTimeout(() => removeToast(toast), toastDetails.timer);
-            }
-
-            const mailBody =    `
-                                    <div>
-                                        <p><b>User Name: ${userName}</b></p>
-                                        <p><b>User Name: ${userEmail}</b></p>
-                                        <p><b>User Name: ${userMsg}</b></p>
-                                    </div>
-                                `
-            
-            Email.send({
-                SecureToken: "9c79b307-ab02-4fe7-a2ba-52be4b4756b8",
-                To : 'team@thesugoishinobis.com',
-                From : userEmail,
-                Subject : "New User Message",
-                Body :  mailBody
-            }).then(
-                message => createToast(('success'))
-            );
-        }
-    </script>
-
-    <script>
-        $(window).scroll(function(){
-            if($(window).scrollTop()){
-                $("nav").addClass("black");
-            }
-            else {
-                $("nav").removeClass("black");
-            }
-        })
-    </script>
-
-    <script type="text/javascript">
-
-        var $carousel = $('.main-carousel').flickity({
-            imagesLoaded: true,
-            percentPosition: false,
-            prevNextButtons: true,
-            pageDots: true,
+    <script> 
+        // Jquery for Activating and Deactivating the Fixed Navigation
+        $(window).scroll( function() {
+            if($(window).scrollTop())   $("nav").addClass("black");
+            else                        $("nav").removeClass("black");
         });
 
-        var $imgs = $carousel.find('.cell img');
-        
-        // Get Transform Property
-        var docStyle = document.documentElement.style;
-        var transformProp = typeof docStyle.transform == 'string' ? 'transform' : 'WebkitTransform';
-        
-        // Get Flickity Instance
-        var flkty = $carousel.data('flickity');
-
-        $carousel.on( 'scroll.flickity', function() {
-            flkty.slides.forEach( function( slide, i ) {
-                var img = $imgs[i];
-                var x = ( slide.target + flkty.x ) * -1/3;
-                img.style[ transformProp ] = 'translateX(' + x  + 'px)';
-            });
+        // Selecting the Target Element for the Writing effect: Welcome to Shinobis Typing Effect
+        var typed = new Typed(".welcome-input", { 
+            strings: ["Welcome to Sugoi Shinobis"], 
+            typedSpeed: 200, 
+            backSpeed: 100, 
+            loop: true
         });
     </script>
 

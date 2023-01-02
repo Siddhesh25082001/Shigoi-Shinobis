@@ -1,3 +1,4 @@
+<!-- This is 'Collection-2.html file for First Collection' -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +11,7 @@
         <!-- Title of the Website -->
         <title>Sugoi Shinobis</title>
 
-        <link rel="shortcut icon" href="images/favicon-img.png" type="image/x-icon">
+        <link rel="shortcut icon" href="images/website-favicon.png" type="image/x-icon">
 
         <!-- CDN Link for Font Awesome Icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
@@ -22,8 +23,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
         <!-- Stylesheet Links -->
-        <link rel="stylesheet" href="css/styles.css">           <!-- Common Component Styling -->
-        <link rel="stylesheet" href="css/collection.css">       <!-- Home Components Styling -->
+        <link rel="stylesheet" href="css/styles.css">           
+        <link rel="stylesheet" href="css/collection.css">       
         <link rel="stylesheet" href="css/contact.css">
         <link rel="stylesheet" href="css/about.css">
 
@@ -32,15 +33,9 @@
     <!-- This is the Body Section -->
     <body>
 
-        <div class="transition">
-            <div class="cover cover1"></div>
-            <div class="cover cover2"></div>
-            <div class="cover cover3"></div>
-        </div>
-
         <nav>
             <div class="logo">
-                <img src="images/logo.png" alt="">
+                <img src="images/website-logo.png" alt="">
             </div>
             <div class="menu">
                 <ul>
@@ -74,20 +69,5 @@
         </div>
 
     </body>
-
-    <script>
-        const link = document.querySelector(".link");
-        const transition = document.querySelector(".transition");
-        link.addEventListener("click", (e) => {
-            e.preventDefault();
-            transition.classList.add("slide");
-            setTimeout(() => {
-                window.location = link.href;
-            }, 900);
-        });
-    </script>
-
-    <script src="js/script.js"></script>
-    <script src="js/community.js"></script>
 
 </html>
