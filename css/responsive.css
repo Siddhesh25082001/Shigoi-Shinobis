@@ -33,6 +33,71 @@
     .fifth .container .card { min-width: 300px; }
 }
 
+@media screen and (max-width: 425px) {
+
+    .roadmap img { width: 40px; height: 20px; }
+    .info .second .right img { width: 100%; height: 100%; }
+    .roadmap { gap: 1rem; }
+
+    nav { flex-direction: column; padding: 0.25rem 0.5rem;}
+    nav .logo { width: 100%; display: flex; justify-content: center; align-items: center; }
+    nav .logo img { width: 40%; }
+    nav .menu { width: 100%; }
+    nav .menu ul li a { font-size: 10px; }
+
+    nav.black { flex-direction: column; padding: 0.25rem 0.5rem;}
+    nav.black .logo { width: 100%; display: flex; justify-content: center; align-items: center; }
+    nav.black .logo img { width: 40%; }
+    nav.black .menu { width: 100%; }
+    nav.black .menu ul li { padding: inherit !important; }
+    nav.black .menu ul li a { font-size: 10px; }
+
+    #home { gap: 2rem; }
+    .aboutTitle h1 { font-size: 48px; }
+    .info { gap: 2rem; }
+    .info .base { font-size: 10px; width: 80%; margin: 0 auto; gap: 1rem; }
+    .info .second { padding: 20px;  flex-direction: column-reverse; }
+    .info .second .left { gap: 1rem; }
+    .second-p { font-size: 18px; }
+    .second-p2 { font-size: 10px; }
+
+    .phaseContainer { padding: 20px; width: 100%; gap: 1rem; }
+    .use-funds { font-size: 18px; }
+    .phaseContainer .phaseDetails { gap: 1rem; }
+    .phaseContainer .phaseDetails ul { font-size: 8px; gap: 1rem }
+    .phaseContainer .phaseDetails ul li { line-height: initial; }
+    .phaseContainer .phaseDetails p { font-size: 8px; }
+
+    footer .main-content .box { padding: 5px; }
+    footer .box h2 { font-size: 1rem; }
+    .left .content p { font-size: 10px; }
+    .left .content .social a span { width: 20px; height: 20px; line-height: 20px; font-size: 12px; }
+    .center .content .fas { width: 30px; height: 30px; line-height: 30px; font-size: 1rem; }
+    .center .content .text { font-size: 10px; }
+    .right form .text { font-size: 10px; }
+    .right form input { height: 35px; font-size: 10px; } 
+    .right form .btn button { font-size: 0.75rem; }
+    .bottom center { font-size: 10px; }
+
+    .fifth .container .card { width: 100%; min-width: 240px; height: 400px; } 
+    .fifth .container .card .box .content h2 { font-size: 5rem; }
+    .fifth .container .card .box .content h3 { font-size: 1rem; }
+    .fifth .container .card .box .content .content-p { font-size: 8px;  }
+
+    .member-view-box { padding: 10px; }
+    .member-image img { width: 20px; height: 20px; } 
+    .member-details h3 { font-size: 12px; }
+    .genealogy-tree ul { width: auto; }
+
+    .fourth { padding: 0; }
+    .phase { font-size: 1rem; padding: 20px; } 
+    .phaseContainer .phaseNumber { font-size: 18px; }
+    .phaseContainer .phaseNumber { border-bottom: 2px solid tomato; padding-bottom: 0; }
+    .phase:before { font-size: 12px; }
+    .phase:nth-child(odd):before { margin-left: -15px; } 
+    .phase:nth-child(odd):before { margin-right: -15px; } 
+}
+
 
 @media screen and (max-width: 320px) {
 
@@ -96,5 +161,5 @@
     .phaseContainer .phaseNumber { border-bottom: 2px solid tomato; padding-bottom: 0; }
     .phase:before { font-size: 12px; }
     .phase:nth-child(odd):before { margin-left: -15px; } 
-    .phase:nth-child(odd):before { margin-right: -15px; } 
+    .phase:nth-child(odd):before { margin-right: 15px; } 
 }
