@@ -42,7 +42,7 @@
 
 .aboutBanner {
     height: 50vh;
-    background: url(../images/sugoii-shinobi-website.jpg);
+    background: url(../images/website-banner.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -116,10 +116,10 @@
     align-items: center;
 }
 
-.info .second .left.second-content {
-    text-align: left;
+.info .second .left .second-content {
+    text-align: left; 
     font-size: 48px;
-    font-family: Lobster;
+    font-family: 'Lobster';
     text-decoration: underline;
 }
 
