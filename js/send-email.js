@@ -56,7 +56,7 @@ function sendEmail() {
 
     Email.send({
         SecureToken: "9c79b307-ab02-4fe7-a2ba-52be4b4756b8",
-        To : "siddheshmane025@gmail.com",
+        To : "team@thesugoishinobis.com",
         From : userEmail,
         Subject : "New User Message",
         Body :  mailBody
