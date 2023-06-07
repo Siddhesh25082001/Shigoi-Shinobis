@@ -7,18 +7,18 @@
 .collectionContent .left .heading .upHeading {
     display: flex;
     justify-content: center;
-    font-size: 225px;
+    font-size: 80px;
     position: relative;
-    bottom: -35px;
+    text-align: center;
 }
 
-.collectionContent .left .heading .downHeading {
+/* .collectionContent .left .heading .downHeading {
     display: flex;
     justify-content: center;
-    font-size: 75px;
+    font-size: 60px;
     position: relative;
-    top: -60px;
-}
+    text-align: center;
+} */
 
 .collectionContent .left .btnContainer {
     position: relative;
@@ -106,12 +106,12 @@
 }
 
 .item {
-    padding: 40px 60px;
+    /* padding: 40px 60px;
     display: flex;
     gap: 2rem;
     flex-direction: column;
     margin: 0 auto;
     height: calc(80vh - 110px);
-    justify-content: center;
+    justify-content: center; */
     align-items: center;
 }

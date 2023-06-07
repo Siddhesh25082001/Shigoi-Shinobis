@@ -30,6 +30,9 @@
         <!-- SMTP Mail Service Script -->
         <script src="https://smtpjs.com/v3/smtp.js"></script>
 
+        <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+        <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+
         <!-- Stylesheet Links -->
         <link rel="stylesheet" href="css/styles.css">        
         <link rel="stylesheet" href="css/about.css">          
@@ -72,21 +75,7 @@
             <!-- About Us Information  -->
             <section class="info">
 
-                <div class="base first">
-                    <p>We are a community of anime enthusiasts and through our revenue-sharing model, we aim to be among the most prosperous passive income ventures in Web-3 space</p>
-                    <p>We are developing a real-life business and breaking into the Indian anime industry</p>
-                </div>
-
-                <div class="base second">
-                    <div class="left">
-                        <p class="second-content">Why India ?</p>
-                        <p>In 2020, more than 73% of Indians watched anime on average, and that number is expected to rise as young people increasingly embrace the anime culture. India has a big market for this industry, and we aim to dominate it!</p>
-                    </div>
-                    <div class="right">
-                        <img src="images/website-about-stats.png" alt="Website-about-stats">
-                    </div>
-                </div>
-
+                <!-- NFT Utilities -->
                 <div class="base sixth">
                     <div class="phaseContainer utility">
                         <h1 class="baseTitle">NFT Utilities</h1>
@@ -106,64 +95,7 @@
                     </div>
                 </div>
 
-                <div class="base fifth">
-
-                    <h1 class="baseTitle">Businesses we will be entering in ...</h1>
-
-                    <div class="container">
-
-                        <div class="card">
-                            <div class="box">
-                                <div class="content">
-                                    <h2>01</h2>
-                                    <h3>Online Store</h3>
-                                    <div class="content-p">
-                                        <p>We are an online retailer of Anime-inspired clothes and accessories under the Akairo brand</p>
-                                        <p>In addition, we have products under the TSS NFT brand for sale in our shop</p> 
-                                        <p>
-                                            As we expand, we intend to keep adding a range of products. Please go to 
-                                            <span>
-                                                <a target = "_blank" href="https://www.theakairostore.com" style = "color: cyan; font-weight:bold;">theakairostore.com</a>
-                                            </span>
-                                            , to know more
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                      
-                        <div class="card">
-                            <div class="box">
-                                <div class="content">
-                                    <h2>02</h2>
-                                    <h3>Anime Themed Store</h3>
-                                    <div class="content-p">
-                                        <p>The FIRST anime-themed store in Mumbai will soon open after the mint</p>
-                                        <p>In addition to all the items we currently carry in our online store, the shop will host cosplay events, anime-related activities, and, finally, an Ichiraku Ramen Shop where you can go to receive the full Naruto experience!</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                      
-                        <div class="card">
-                            <div class="box">
-                                <div class="content">
-                                    <h2>03</h2>
-                                    <h3>Anime Streaming DAPP</h3>
-                                    <div class="content-p">
-                                        <p>A production house and studio that specialises in anime-inspired content will also be opening post mint</p>
-                                        <p> Sugoi Shinobis will serve as the basis for a manga and anime series</p>
-                                        <p>Additionally, we'll be encouraging young, brilliant anime creators everywhere! They will receive marketing assistance from us, and their content will be made available on our streaming platform. Additionally, we will aid manga and comic book authors with marketing and publication </p> 
-                                    </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    
-                </div>
-
+                <!-- Use of Funds -->
                 <div class="base third">
 
                     <h1 class="baseTitle">Use of Funds</h1>
@@ -341,6 +273,66 @@
                     </div>                    
                 </div>
 
+                <!-- Business Plan -->
+                <div class="base fifth">
+
+                    <h1 class="baseTitle">Our Business Plans</h1>
+
+                    <div class="container">
+
+                        <div class="card">
+                            <div class="box">
+                                <div class="content">
+                                    <h2>01</h2>
+                                    <h3>Online Store</h3>
+                                    <div class="content-p">
+                                        <p>We are an online retailer of Anime-inspired clothes and accessories under the Akairo brand</p>
+                                        <p>In addition, we have products under the TSS NFT brand for sale in our shop</p> 
+                                        <p>
+                                            As we expand, we intend to keep adding a range of products. Please go to 
+                                            <span>
+                                                <a target = "_blank" href="https://www.theakairostore.com" style = "color: cyan; font-weight:bold;">theakairostore.com</a>
+                                            </span>
+                                            , to know more
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <div class="card">
+                            <div class="box">
+                                <div class="content">
+                                    <h2>02</h2>
+                                    <h3>Anime Themed Store</h3>
+                                    <div class="content-p">
+                                        <p>The FIRST anime-themed store in Mumbai will soon open after the mint</p>
+                                        <p>In addition to all the items we currently carry in our online store, the shop will host cosplay events, anime-related activities, and, finally, an Ichiraku Ramen Shop where you can go to receive the full Naruto experience!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <div class="card">
+                            <div class="box">
+                                <div class="content">
+                                    <h2>03</h2>
+                                    <h3>Anime Streaming DAPP</h3>
+                                    <div class="content-p">
+                                        <p>A production house and studio that specialises in anime-inspired content will also be opening post mint</p>
+                                        <p> Sugoi Shinobis will serve as the basis for a manga and anime series</p>
+                                        <p>Additionally, we'll be encouraging young, brilliant anime creators everywhere! They will receive marketing assistance from us, and their content will be made available on our streaming platform. Additionally, we will aid manga and comic book authors with marketing and publication </p> 
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+                <!-- Roadmap -->
                 <div class="base fourth">
 
                     <h1 class="baseTitle roadmapTitle">
@@ -359,7 +351,7 @@
                                 <div class="phaseDetails">
                                     <ul>
                                         <li>Build a community of Shinobis on Discord</li>
-                                        <li>3333 Shinobis will invade the Web-3 space using their hidden jutsu!</li>
+                                        <li>3333 NFTs will invade the web3 space</li>
                                         <li>Listing on Magic Eden and verification set up</li>
                                         <li>There will be three clans and each clan will have 1111 Shinobis 🥷</li>
                                         <li>The Shinobis will get access to the DAO, which will provide them with top alpha calls, cryptoanalysis, whitelist for other projects, exclusive poker tournaments and games to get rewarded for Sol and other prizes</li>
@@ -406,10 +398,10 @@
                 <div class="main-content">
                     
                     <div class="left box">
-                        <h2>About us</h2>
+                        <h2>Sugoi Shinobis</h2>
                         <div class="content">
-                            <p>We are a community of anime enthusiasts and through our revenue-sharing model, we aim to be among the most prosperous passive income ventures on Solana blockchain.</p>
-                            <p>We are developing a real-life business and breaking into the Indian anime industry.</p>
+                            <p>Embrace the anime revolution on the Solana blockchain with our community of visionaries. We empower anime enthusiasts by turning their passion into thriving real-life businesses. Together, we'll reshape the Indian anime industry, unlock unprecedented financial opportunities, and redefine the landscape of anime on Solana.
+                            </p>
                             <div class="social">
                                 <a target = "_blank" href="https://twitter.com/SugoiShinobiNFT"><span class="fab fa-twitter"></span></a>
                                 <a target = "_blank" href="https://discord.gg/gba7NXetBG"><span class="fab fa-discord"></span></a>
@@ -445,7 +437,7 @@
                                 </div>
                                 <div class="msg">
                                     <div class="text" id="message">Message *</div>
-                                    <textarea rows="2" cols="25" required id="msg"></textarea>
+                                    <textarea rows="5" cols="25" required id="msg"></textarea>
                                 </div>
                                 <div class="btn">
                                     <button type="submit" class="btn-submit">Send</button>
@@ -459,7 +451,7 @@
                 <div class="bottom">
                     <center>
                         <span class="credit">Created By <a href="#">Team Sugoi Shinobis</a> | </span>
-                        <span class="far fa-copyright"></span><span> 2022 All rights reserved.</span>
+                        <span class="far fa-copyright"></span><span> 2023 All rights reserved.</span>
                     </center>
                 </div>
 
@@ -486,6 +478,12 @@
             typedSpeed: 200, 
             backSpeed: 100, 
             loop: true
+        });
+    </script>
+
+    <script>
+        tippy('', {
+            content: 'My!',
         });
     </script>
 

@@ -23,16 +23,16 @@
 .communityContent .heading .upHeading {
     display: flex;
     justify-content: flex-end;
-    font-size: 140px;
+    font-size: 130px;
     position: relative;
-    bottom: -80px;
 }
 
 .communityContent .heading .downHeading {
     display: flex;
     justify-content: flex-end;
-    font-size: 125px;
+    font-size: 110px;
     position: relative;
+    top: -40px;
 }
 
 .communityBtns .right {

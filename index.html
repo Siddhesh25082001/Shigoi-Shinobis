@@ -30,6 +30,9 @@
         <!-- SMTP Mail Service Script -->
         <script src="https://smtpjs.com/v3/smtp.js"></script>
 
+        <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+        <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+
         <!-- Stylesheet Links -->
         <link rel="stylesheet" href="css/home.css">          
         <link rel="stylesheet" href="css/styles.css">        
@@ -71,13 +74,14 @@
                     <div class="left">
                         <div style = "display: flex; flex-direction: column; gap: 2rem;">
                             <p class="homeTitle"><span class="welcome-input"></span></p>
-                            <p class="homeSubTitle">We are a startup with roots in India, and we want to rule the anime industry while forging a solid community.</p>
-                            <p class="homeSubTitle">We are launching our collection of 3333 NFTs, which will offer our holders with amazing utilities and enable us to raise money in order to develop a successful business.</p>
+                            <p class="homeSubTitle">We are looking for anime aficionados to build a vibrant and enjoyable community. We will shortly introduce our NFT collection, which will offer our holders useful utilities and passive income.</p>
+                            <p class="homeSubTitle">Join our anime revolution, dominate the scene! Own 3333 mind-blowing NFTs, unlock greatness, and redefine the community!
+                            </p>
                         </div>
                         <a href="#about"><button class="explore">Explore More &rightarrow;</button></a>
                     </div>
                     <div class="right">
-                        <img src="images/website-banner-gif.gif" alt="" width="100%" height="100%" style="border-radius: 25px;">
+                        <img src="images/website-banner.gif" alt="" width="100%" height="100%" style="border-radius: 25px;">
                     </div>
                 </section>
 
@@ -87,26 +91,26 @@
             <section id="about" class="secContent aboutContent sameStyle">
                 <div class="left">
                     <div class="heading">
-                        <p class="upHeading">About</p>
-                        <p class="downHeading">Us</p>
+                        <p class="upHeading">Sugoi Shinobis </p>
+                        <p class="downHeading">Unleashing Anime Ascendancy!</p>
                     </div>
+                    <a target = "_blank" href="about.html">
+                        <button class="explore">Our Vision &rightarrow;</button>
+                    </a>
                 </div>
                 <div class="right">
-                    <p>Oui, Oui, Oui!</p>
-                    <p>Greetings from The Sugoi Shinobis!</p>
-                    <p>That's right - Sugoi: We are a tribe of fierce shinobis eager to seize power!</p>
-                    <p>Every Shinobi has a life purpose, ours is to build a real company in the anime sector and provide our holders with some useful utilities.</p>
-                    <a target = "_blank" href="about.html">
-                        <button class="explore">Want to know more about us &rightarrow;</button>
-                    </a>
+                    <p>Greetings from the Sugoi Shinobis, a tribe of unstoppable warriors destined for greatness!</p>
+                    <p>Our mission? To conquer the anime industry and empower the next generation.</p> 
+                    <p>As fierce shinobis, we've set our sights on building a thriving space for enthusiasts and creators to collaborate.</p>
+                    <p>With our innovative approach and unwavering determination, we're set to redefine the anime sector and deliver extraordinary value to our holders.</p> 
+                    <p>Join us on this epic journey as we forge an unbreakable bond between art and technology, revolutionizing the anime world in India for generations to come.</p>
                 </div>
             </section>
 
             <section id="collections" class="secContent collectionContent sameStyle">
                 <div class="left">
                     <div class="heading">
-                        <p class="upHeading">Our</p>
-                        <p class="downHeading">Collection</p>
+                        <p class="upHeading">Pick your Clan of Shinobis</p>
                     </div>
                 </div>
                 <div class="right">
@@ -172,10 +176,10 @@
             <footer id="contact">
                 <div class="main-content">
                     <div class="left box">
-                        <h2>About us</h2>
+                        <h2>Sugoi Shinobis</h2>
                         <div class="content">
-                            <p>We are a community of anime enthusiasts and through our revenue-sharing model, we aim to be among the most prosperous passive income ventures on Solana blockchain.</p>
-                            <p>We are developing a real-life business and breaking into the Indian anime industry.</p>
+                            <p>Embrace the anime revolution on the Solana blockchain with our community of visionaries. We empower anime enthusiasts by turning their passion into thriving real-life businesses. Together, we'll reshape the Indian anime industry, unlock unprecedented financial opportunities, and redefine the landscape of anime on Solana.
+                            </p>
                         <div class="social">
                             <a target = "_blank" href="https://twitter.com/SugoiShinobiNFT"><span class="fab fa-twitter"></span></a>
                             <a target = "_blank" href="https://discord.gg/gba7NXetBG"><span class="fab fa-discord"></span></a>
@@ -211,7 +215,7 @@
                                 </div>
                                 <div class="msg">
                                     <div class="text" id="message">Message *</div>
-                                    <textarea rows="2" cols="25" required id="msg"></textarea>
+                                    <textarea rows="5" cols="25" required id="msg"></textarea>
                                 </div>
                                 <div class="btn">
                                     <button type="submit" class="btn-submit">Send</button>
@@ -224,7 +228,7 @@
                 <div class="bottom">
                     <center>
                         <span class="credit">Created By <a href="#">Team Sugoi Shinobis</a> | </span>
-                        <span class="far fa-copyright"></span><span> 2022 All rights reserved.</span>
+                        <span class="far fa-copyright"></span><span> 2023 All rights reserved.</span>
                     </center>
                 </div>
             </footer>
@@ -246,7 +250,7 @@
 
         // Selecting the Target Element for the Writing effect: Welcome to Shinobis Typing Effect
         var typed = new Typed(".welcome-input", { 
-            strings: ["Welcome to Sugoi Shinobis"], 
+            strings: ["Art", "Community", "Empowerment"], 
             typedSpeed: 200, 
             backSpeed: 100, 
             loop: true

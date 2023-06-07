@@ -4,22 +4,22 @@
     display: flex;
     flex-direction: column;
     width: 50%;
+    text-align: center;
+    gap: 2rem;
 }
 
 .aboutContent .left .heading .upHeading {
     display: flex;
     justify-content: center;
-    font-size: 110px;
+    font-size: 65px;
     position: relative;
-    bottom: -90px;
 }
 
 .aboutContent .left .heading .downHeading {
     display: flex;
     justify-content: center;
-    font-size: 225px;
+    font-size: 30px;
     position: relative;
-    top: -20px;
 }
 
 .aboutContent .left .btnContainer {
@@ -33,7 +33,7 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 /* About Us Page */
@@ -312,7 +312,7 @@
 }
 
 .phaseContainer .phaseDetails p {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .phaseContainer .phaseDetails ul {
