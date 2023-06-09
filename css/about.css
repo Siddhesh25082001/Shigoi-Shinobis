@@ -8,18 +8,26 @@
     gap: 2rem;
 }
 
+.aboutContent .left .heading {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 .aboutContent .left .heading .upHeading {
     display: flex;
     justify-content: center;
-    font-size: 65px;
+    font-size: 80px;
     position: relative;
+    font-family: 'Kosugi Maru', sans-serif;
 }
 
 .aboutContent .left .heading .downHeading {
     display: flex;
     justify-content: center;
-    font-size: 30px;
+    font-size: 40px;
     position: relative;
+    font-family: 'Kosugi Maru', sans-serif;
 }
 
 .aboutContent .left .btnContainer {
@@ -33,7 +41,7 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 /* About Us Page */
@@ -46,6 +54,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: 'Yuji Syuku', serif !important;
 }
 
 .aboutTitle {
@@ -61,7 +70,7 @@
 .aboutTitle h1 {
     font-size: 96px;
     letter-spacing: 5px;
-    font-family: 'Lobster', sans-serif;
+    font-family: 'Kosugi Maru', sans-serif;;
     color: #fff;
 }
 
@@ -74,6 +83,7 @@
     color: #fff;
     width: 90%;
     margin: 0 auto;
+    
 }
 
 .info .base {
@@ -82,10 +92,11 @@
     font-size: 24px;
     font-family: cursive;
     width: 100%;
+    font-family: 'Yuji Syuku', serif !important;
 }
 
 .info .base .baseTitle {
-    font-family: 'Lobster';
+    font-family: 'Kosugi Maru', sans-serif;
     justify-content: center;
     text-align: center;
     font-size: 48px;
@@ -119,7 +130,7 @@
 .info .second .left .second-content {
     text-align: left; 
     font-size: 48px;
-    font-family: 'Lobster';
+    font-family: 'Kosugi Maru', sans-serif;
     text-decoration: underline;
 }
 
@@ -137,7 +148,6 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    font-family: 'Poppins', sans-serif !important;
 }
 
 .info .fifth .container {
@@ -295,6 +305,7 @@
     gap: 2rem;
     flex-direction: column;
     width: 80%;
+    font-family: 'Yuji Syuku', serif;
 }
 
 .phaseContainer .phaseNumber {
@@ -302,7 +313,7 @@
     padding-bottom: 10px;
     border-bottom: 5px solid tomato;
     width: max-content;
-    font-family: 'Lobster'
+    font-family: 'Kosugi Maru', sans-serif;
 }
 
 .phaseContainer .phaseDetails {
@@ -329,7 +340,6 @@
 
 .utility {
     width: 100%;
-    font-family: 'Poppins';
 }
 
 
@@ -442,7 +452,6 @@
 
 .genealogy-tree li a{
     text-decoration: none;
-    font-family: arial, verdana, tahoma;
     font-size: 14px;
     display: inline-block;
     border-radius: 5px;
@@ -480,7 +489,7 @@
 .fourth {
     flex-direction: column;
     padding: 0 50px;
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Yuji Syuku', serif;
 }
 
 main {
