@@ -112,7 +112,7 @@
     .homeContent .right { width: 70%; }
     .homeContent .left .homeTitle { font-size: 18px; }
     .homeContent .left .homeSubTitle { font-size: 10px; }
-    .home-p { gap: 1rem; }
+    .homeContent .left .home-p { gap: 1rem; }
 
     .aboutContent .left { width: 100%; gap: 1rem; }
     .aboutContent .left .heading .upHeading { font-size: 20px; }
@@ -227,7 +227,7 @@
     .homeContent .right { width: 70%; }
     .homeContent .left .homeTitle { font-size: 18px; }
     .homeContent .left .homeSubTitle { font-size: 10px; }
-    .home-p { gap: 1rem; }
+    .homeContent .left .home-p { gap: 1rem; }
 
     .aboutContent .left { width: 100%; gap: 1rem; }
     .aboutContent .left .heading .upHeading { font-size: 20px; }
