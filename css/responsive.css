@@ -33,6 +33,8 @@
     .info .second .right { width: 100% }
     .fifth .container { gap: 2rem; }
     .fifth .container .card { min-width: 300px; }
+
+    .info .fifth .container .card { width: 300px !important; }
 }
 
 /* 426 0 Large Mobile Screen */
@@ -97,7 +99,12 @@
     .phaseContainer .phaseNumber { border-bottom: 2px solid tomato; padding-bottom: 0; }
     .phase:before { font-size: 12px; }
     .phase:nth-child(odd):before { margin-left: -15px; } 
-    .phase:nth-child(odd):before { margin-right: -15px; } 
+    .phase:nth-child(odd):before { margin-right: -15px; }
+    
+    .info .fifth .container .card { width: 275px !important; }
+    .info .fifth .container .card .box .content h3 { font-size: 1rem; }
+    .info .fifth .container .card .box .content .content-p { font-size: 10px; }
+    .info .fifth .container .card .box .content .content-p button img { width: 30px !important; height: 30px !important; }
 }
 
 /* 320 - Small Mobile Screen */
@@ -163,4 +170,47 @@
     .phase:before { font-size: 12px; }
     .phase:nth-child(odd):before { margin-left: -15px; } 
     .phase:nth-child(odd):before { margin-right: 15px; } 
+
+    .info .fifth .container .card { width: 250px !important; }
+    .info .fifth .container .card .box .content h3 { font-size: 1rem; }
+    .info .fifth .container .card .box .content .content-p { font-size: 10px; }
+    .info .fifth .container .card .box .content .content-p button img { width: 30px !important; height: 30px !important; }
+
+    .secContent { width: 70%; padding: 20px; gap: 2rem; border-radius: 10px; }
+
+    .homeContent { flex-direction: column-reverse; height: auto; width: 90%; gap: 1rem; }
+    .homeContent .left { width: 100%; gap: 1rem; } 
+    .homeContent .right { width: 70%; }
+    .homeContent .left .homeTitle { font-size: 18px; }
+    .homeContent .left .homeSubTitle { font-size: 10px; }
+
+    .aboutContent .left { width: 100%; gap: 1rem; }
+    .aboutContent .left .heading .upHeading { font-size: 20px; }
+    .aboutContent .left .heading .downHeading { font-size: 20px; }
+    .aboutContent .right p { font-size: 10px; text-align: center; }
+    .explore { font-size: 10px; padding: 4px 8px; width: 100%; }
+
+    .collectionContent .left { width: 100%; gap: 1rem; }
+    .collectionContent .upHeading { font-size: 20px; text-align: center; line-height: 1.5rem; }
+    .collectionContent .downHeading { font-size: 20px; }
+
+    .flickity-viewport { height: min-content; }
+    .collectionContent .cell { flex-direction: column-reverse; height: auto; gap: 1rem; padding: 10px; }
+    .collectionContent .cell .right { width: 100%; }
+    .collectionContent .cell .right img { width: 100%; height: 100%; }
+    .flickity-prev-next-button { width: 20px; height: 20px; }
+
+    .collectionContent .cell .left { width: 90%; }
+    .collectionContent .cell .left .phaseNumber { font-size: 20px !important; }
+    .collectionContent .cell .left ul p { font-size: 10px !important; }
+    .flickity-page-dots { bottom: 0; }
+    .flickity-page-dots .dot { width: 5px; height: 5px; }
+
+    .communityContent .heading .upHeading { font-size: 20px; bottom: 0; }
+    .communityContent .heading .downHeading { font-size: 20px; top: 0; }
+    .communityContent .right { gap: 2rem; }
+    .btn-large { font-size: 18px; padding: 4px 10px; }
+    .btn-large span { font-size: 18px; }
+    .btn-large span .fa-brands { font-size: 18px; }
+    .communityBtns .btnContainer { padding: 4px; }
 }
