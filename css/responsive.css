@@ -7,7 +7,6 @@
     .collectionContent .left .heading .downHeading { font-size: 65px; }
     .communityContent .heading .upHeading { font-size: 95px; bottom: -50px; }
     .communityContent .heading .downHeading { font-size: 80px; }
-    .collectionContent .right { margin-bottom: 1rem; }
     .btn-large { min-width: 0px; }
     .btn-large span { font-size: 25px; }
     
@@ -24,7 +23,6 @@
     .homeContent { width: 100%; flex-direction: column; } 
     .secContent { flex-direction: column; gap: 0; }
     .sameStyle .right { width: 100%; } 
-    .collectionContent .right { margin-bottom: 1.5rem; }
     .communityContent .left { width: 80%; }
     .communityContent .heading .upHeading, .downHeading { justify-content: center; }
 
@@ -213,14 +211,16 @@
     .info .fifth .container .card .box .content h3 { font-size: 1rem; }
     .info .fifth .container .card .box .content .content-p { font-size: 10px; }
     .info .fifth .container .card .box .content .content-p button img { width: 30px !important; height: 30px !important; }
+    .info .fifth .container { gap: 1rem; }
 
-    .secContent { width: 70%; padding: 20px; gap: 2rem; border-radius: 10px; }
+    .secContent { width: 70%; padding: 20px; gap: 1rem; border-radius: 10px; }
 
     .homeContent { flex-direction: column-reverse; height: auto; width: 90%; gap: 1rem; }
     .homeContent .left { width: 100%; gap: 1rem; } 
     .homeContent .right { width: 70%; }
     .homeContent .left .homeTitle { font-size: 18px; }
     .homeContent .left .homeSubTitle { font-size: 10px; }
+    .home-p { gap: 1rem; }
 
     .aboutContent .left { width: 100%; gap: 1rem; }
     .aboutContent .left .heading .upHeading { font-size: 20px; }
@@ -240,15 +240,20 @@
 
     .collectionContent .cell .left { width: 90%; }
     .collectionContent .cell .left .phaseNumber { font-size: 20px !important; }
+    .collectionContent .cell .left ul { gap: 1rem; }
     .collectionContent .cell .left ul p { font-size: 10px !important; }
     .flickity-page-dots { bottom: 0; }
     .flickity-page-dots .dot { width: 5px; height: 5px; }
 
     .communityContent .heading .upHeading { font-size: 20px; bottom: 0; }
     .communityContent .heading .downHeading { font-size: 20px; top: 0; }
-    .communityContent .right { gap: 2rem; }
+    .communityContent .left, .communityContent .right { width: 100%; }
+    .communityContent .right { gap: 1rem; }
     .btn-large { font-size: 18px; padding: 4px 10px; }
     .btn-large span { font-size: 18px; }
     .btn-large span .fa-brands { font-size: 18px; }
+    .communityBtns { gap: 1rem; }
     .communityBtns .btnContainer { padding: 4px; }
+
+    footer { border-top-left-radius: 15px; border-top-right-radius: 15px; margin-top: 1rem; }
 }

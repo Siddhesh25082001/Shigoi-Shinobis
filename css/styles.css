@@ -171,6 +171,12 @@ nav.black a:hover {
     color: lightgray;
 }
 
+.home-p {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 .explore {
     font-family: 'Yuji Syuku', serif;;
     outline: none;
