@@ -1,0 +1,317 @@
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+#banner {
+    background: url('./images/banner-bg.png') center/cover no-repeat;
+}
+
+#about {
+    background: url('./images/about-bg.png') center/cover no-repeat;
+}
+
+#collection {
+    background: url('./images/collection-bg.png') center/cover no-repeat;
+}
+
+#community {
+    background: url('./images/community-bg.png') center/cover no-repeat;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    width: 100%;
+}
+
+nav .logo, nav .menu {
+    width: 50%;
+}
+
+nav img {
+    width: 20%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+nav .menuItem {
+    font-family: var(--header-font);
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+#banner .homeContent {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+}
+
+#banner .left {
+    width: 60%;
+}
+
+#banner .right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+}
+
+#banner .homeTitle {
+    text-align: center;
+}
+
+#banner .underline {
+    width: 30%;
+    position: absolute;
+    top: 12%;
+    left: 60%;
+}
+
+#banner span {
+    font-size: 64px;
+    font-family: var(--header-font);
+    text-transform: uppercase;
+}
+
+#banner .homeSubTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    font-family: var(--body-font);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+#banner .exploreBtn {
+    width: 60%;
+    position: relative;
+    bottom: 3rem;
+}
+
+#about .aboutContent {
+    display: flex;
+    padding: 1rem 2rem;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+#about .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem;
+}
+
+#about .left img {
+    width: 50%;
+}
+
+#about .aboutTitle {
+    font-size: 2rem;
+    font-family: var(--header-font);
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+#about .aboutSubTitle {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: var(--body-font);
+}
+
+#about .right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .right img {
+    width: 60%;
+    border-radius: 1.2rem;
+}
+
+#community .communityContent {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 5rem;
+    gap: 4rem;
+    width: 50%;
+    justify-content: space-between;
+}
+
+#community .communityTitle {
+    font-family: var(--header-font);
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.25rem;
+}
+
+#community .btnContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--header-font);
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+#community .btnContainer .btn {
+    width: 50%;
+}
+
+#community .btn img {
+    width: 100%;
+}
+
+#collection .collectionContent {
+    display: flex;
+    padding: 1rem 2rem;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+#collection .left {
+    width: 30%;
+}
+
+#collection .right {
+    width: 70%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#collection .collectionTitle {
+    font-family: var(--header-font);
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.25rem;
+}
+
+#collection .slider .slideItem {
+    width: 100%;
+    padding: 0 4rem;
+    display: flex !important;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#collection .slideItem .clanHeading {
+    text-align: center;
+    font-weight: 600;
+}
+
+#collection .slideItem .clanTitle {
+    font-family: var(--header-font);
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: orangered;
+}
+
+#collection .slideItem .clanSubTitle {
+    font-family: var(--body-font);
+    font-size: 1.5rem;
+}
+
+#collection .slideItem .clanInfo {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#collection .clanInfo .left {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-family: var(--body-font);
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+#collection .clanInfo .right {
+    width: 40%;
+}
+
+#collection .right img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+#collection .underline {
+    position: absolute;
+    width: 40% !important;
+    left: 45%;
+    top: 195%;
+}
+
+@media screen and (max-width: 425px) {
+
+    section { height: max-content; }
+    
+    nav { flex-direction: column; padding: 0.5rem 1.5rem; }
+    nav .logo { width: 100%; text-align: center; }
+    nav .menu { width: 100%; }
+    nav .menuItem { font-size: 0.75rem; }
+
+    #banner .homeContent { flex-direction: column; padding: 0.5rem 1rem; }
+    #banner .right { width: 100%; gap: 2rem; } 
+    #banner span { font-size: 32px; }
+    #banner .underline { width: 60%; top: 10%; left: 20%; }
+    #banner .homeSubTitle { gap: 1rem; font-size: 1rem; }
+    #banner .exploreBtn { bottom: 1.5rem; }
+
+    #about .aboutContent { flex-direction: column; padding: 1rem; gap: 1rem; }
+    #about .left { width: 100%; padding: 1rem; gap: 1rem }
+    #about .left img { width: 30% }
+    #about .aboutTitle { font-size: 1rem; }
+    #about .aboutSubTitle { gap: 1rem; font-size: 1rem; }
+    #about .right { width: 100%; }
+
+    #collection .collectionContent { flex-direction: column; padding: 1rem; gap: 1rem }
+    #collection .right { width: 100%; padding: 1rem; }
+    #collection .collectionTitle { font-size: 1.5rem; }
+    #collection .underline { left: 30%; }
+    #collection .slider .slideItem { width: 100%; display: inline-block; padding: 0; gap: 1rem; }
+    #collection .slideItem .clanTitle { font-size: 1.5rem; }
+    #collection .slideItem .clanSubTitle { font-size: 1rem; }
+    #collection .slideItem .clanInfo { flex-direction: column-reverse; gap: 1rem; }
+    #collection .clanInfo .left { width: 100%; gap: 1rem; }
+    #collection .clanInfo .right { width: 100%; }
+
+    #community .communityContent { width: 100%; padding: 1rem; gap: 2rem; }
+    #community .communityTitle { font-size: 2.5rem; }
+    #community .btnContainer { font-size: 1rem; }
+
+    .slick-prev, .slick-next { width: 2rem !important }
+    .slick-prev:before, .slick-next:before { font-size: 2rem !important; }
+    .slick-dots li button:before { font-size: 0.5rem !important; }
+}
