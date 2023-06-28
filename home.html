@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- This is the Head Section -->
+    <head>
+
+        <!-- Meta Information for Search Engines -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <!-- Title of the Website -->
+        <title>Sugoi Shinobis</title>
+
+        <link rel="shortcut icon" target = "_blank" href="images/favicon.png" type="image/x-icon">
+
+        <!-- CDN Link for Font Awesome Icons -->
+        <link rel="stylesheet" target = "_blank" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+        <!-- CDN Link for Carousel -->
+        <link rel="stylesheet" target = "_blank" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        
+        <!-- jQuery Script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+        <!-- Carousel Script -->
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        
+        <!-- SMTP Mail Service Script -->
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+        <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+        <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+
+        <!-- Stylesheet Links -->
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/toast.css">
+
+    </head>
+    
+    <!-- This is the Body Section -->
+    <body>
+
+        <ul class="notifications"></ul>
+        
+        <div class="index">
+            
+            <section id="banner">
+                
+                <nav>
+                    <div class="logo">
+                        <img src="images/logo.png" alt="Sugoi Shinobis Website" />
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a class="menuItem" href="#banner">Home</a></li>
+                            <li><a class="menuItem" href="#about">About Us</a></li>
+                            <li><a class="menuItem" href="#collection">Collections</a></li>
+                            <li><a class="menuItem" href="#community">Community</a></li>
+                            <li><a class="menuItem" href="#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="homeContent">
+                    <div class="left"></div>
+                    <div class="right">
+                        <div class="homeTitle">
+                            <span class="welcome-input"></span>
+                            <img class="underline" src="images/underline.png" alt="Underline" />
+                        </div>
+                        <div class="homeSubTitle">
+                            <p>We are looking for anime aficionados to build a vibrant and enjoyable community. We will shortly introduce our NFT collection, which will offer our holders useful utilities and passive income.</p>
+                            <p>Join our anime revolution, dominate the scene! Own 3333 mind-blowing NFTs, unlock greatness, and redefine the community! <b>Unleash 3333 NFTS in the space. Unlock greatness. Become the new anime revolution.</b></p>
+                            <a target="_blank" href="about.html"><img class="exploreBtn" src="images/explore-btn.png" alt="Explore More" /></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about">
+                <div class="aboutContent">
+                    <div class="left">
+                        <img src="images/logo.png" alt="Sugoi Shinobis Logo" />
+                        <div class="aboutTitle">
+                            <p>Unleashing Anime Ascendency</p>
+                        </div>
+                        <div class="aboutSubTitle">
+                            <p>Greetings from the Sugoi Shinobis, a tribe of unstoppable warriors destined for greatness!</p>
+                            <p>Our mission? To conquer the anime industry and empower the next generation.</p>
+                            <p>As fierce warriors, we build a thriving space for collaboration. With innovation and determination, we redefine anime, delivering value to our holders. Join our epic journey, revolutionising the Indian anime world for generations.</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <img src="images/about-gif.gif" alt="Sugoi Shinobis GIF" />
+                    </div>
+                </div>
+            </section>
+
+            <section id="collection">
+                <div class="collectionContent">
+                    <div class="left"></div>
+                    <div class="right">
+                        <div class="collectionTitle">
+                            <p>Choose Who You Are</p>
+                            <img class="underline" src="images/underline.png" alt="Underline" />
+                        </div>
+                        <div class="slider main-carousel">
+                                <div class='slideItem cell'>
+                                    <div class="clanHeading">
+                                        <p class="clanTitle">Astra</p>
+                                        <p class="clanSubTitle">Determination - Cunning - Mystic</p>
+                                    </div>  
+                                    <div class="clanInfo">
+                                        <div class="left">
+                                            <p>Born from the lineage of the mighty thunder god, these fierce warriors possess a dangerous combination of ruthlessness and magnetic prowess. With the ability to manipulate magnetic fields, they command an arsenal of shocking powers.</p>
+                                            <p>Their minds are their greatest weapons, capable of bending others to their will. Beware their devastating shock waves and lightning-fast bolts, for the Astras strike with unrivalled force and cunning precision.</p>
+                                        </div>
+                                        <div class="right">
+                                            <img src="images/astra.png" alt="Clan Avatar" />
+                                        </div>
+                                    </div>  
+                                </div>
+                
+                                <div class='slideItem cell'>
+                                    <div class="clanHeading">
+                                        <p class="clanTitle">Volaris</p>
+                                        <p class="clanSubTitle">Courage - Grace - Mastery</p>
+                                    </div>  
+                                    <div class="clanInfo">
+                                        <div class="left">
+                                            <p>Becoming one with elemental harmony and striking with lightning-fast precision, the warrior clan Volaris has mastered the art of wind-wielding warfare. Their disciplined approach to combat allows them to swiftly neutralise opponents with clean and effective techniques</p>
+                                            <p>With meticulous precision, their strikes hit the mark, delivering devastating blows that take their enemies by storm. Join the ranks of Volaris and soar to new heights as you master the art of wind-wielding warfare. Embrace the grace of the tempest and leave your mark as a true warrior of the wind</p>
+                                        </div>
+                                        <div class="right">
+                                            <img src="images/volaris.png" alt="Clan Avatar" />
+                                        </div>
+                                    </div>  
+                                </div>
+                
+                                <div class='slideItem cell'>
+                                    <div class="clanHeading">
+                                        <p class="clanTitle">Avalan</p>
+                                        <p class="clanSubTitle">Versatile - Catalyst - Intuitive</p>
+                                    </div>  
+                                    <div class="clanInfo">
+                                        <div class="left">
+                                            <p>Unleashing their inner catalyst, the Avalan awakens the dormant magic in others. With perfect balance and merging mystic power with shinobi skills, these unique beasts tap into their ethereal intuition, navigating the arcane with grace.</p>
+                                            <p>As a noble guardian, protect realms magical and mundane. Embrace the Mystic Vanguard, where legends are born, forging a path of enchantment and leaving an indelible mark on the world.</p>
+                                        </div>
+                                        <div class="right">
+                                            <img src="images/avalan.png" alt="Clan Avatar" />
+                                        </div>
+                                    </div>  
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="community">
+                <div class="communityContent">
+                    <div class="communityTitle">
+                        <p>Join our community</p>
+                    </div>
+                    <div class="btnContainer">
+                        <a target="_blank" href="https://discord.gg/gba7NXetBG" class="btn" target='_blank'>
+                            <img src="images/discord-btn.png" alt="Twitter Handle" />
+                            <span>Discord</span>
+                        </a>
+                        <a target="_blank" href="https://twitter.com/SugoiShinobiNFT" class="btn" target='_blank'>
+                            <img src="images/twitter-btn.png" alt="Twitter Handle" />
+                            <span>Twitter</span>
+                        </a>
+                        <a target="_blank" href="https://www.theakairostore.com" class="btn" target='_blank'>
+                            <img src="images/akairo-btn.png" alt="Twitter Handle" />
+                            <span>The Akairo Store</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </div> 
+
+    </body>
+
+    <!-- Link to JS Scripts -->
+    <script src="js/slider-carousel.js"></script>
+    <script src="js/send-email.js"></script>
+
+    <script> 
+        // Jquery for Activating and Deactivating the Fixed Navigation
+        $(window).scroll( function() {
+            if($(window).scrollTop())   $("nav").addClass("black");
+            else                        $("nav").removeClass("black");
+        });
+
+        // Selecting the Target Element for the Writing effect: Welcome to Shinobis Typing Effect
+        var typed = new Typed(".welcome-input", { 
+            strings: ["Art", "Community", "Empowerment"], 
+            typedSpeed: 200, 
+            backSpeed: 100, 
+            loop: true
+        });
+    </script>
+
+</html>
