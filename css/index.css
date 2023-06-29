@@ -131,8 +131,8 @@ nav .menuItem {
     gap: 2rem;
     text-align: center;
     font-family: var(--body-font);
-    font-weight: 600;
-    font-size: 1.2rem;
+    font-weight: 400;
+    font-size: 2.5rem;
 }
 
 #banner .exploreBtn {
