@@ -135,7 +135,7 @@ nav .menuItem {
     font-size: 2.5rem;
 }
 
-.exploreBtn {
+#banner .exploreBtn, #about .exploreBtn {
     width: 60%;
     position: relative;
     bottom: 2rem;
@@ -326,15 +326,15 @@ nav .menuItem {
     #banner span { font-size: 32px; }
     #banner .underline { width: 60%; top: 34%; left: 20%; }
     #banner .homeSubTitle { gap: 1rem; font-size: 1rem; }
-    .exploreBtn { bottom: 1.5rem; }
+    #banner .exploreBtn { bottom: 1.5rem; }
 
     #about .aboutContent { flex-direction: column; padding: 1rem; gap: 1rem; }
     #about .left { width: 100%; padding: 1rem; gap: 1rem }
-    #about .left img { width: 30% }
+    #about .left .logo { width: 30% }
     #about .aboutTitle { font-size: 1rem; }
     #about .aboutSubTitle { gap: 1rem; font-size: 0.75rem; }
     #about .right { width: 100%; }
-    #about .right img { width: 40%; position: relative; bottom: 4rem; }
+    #about .right img { width: 60%; position: relative; bottom: 2rem; }
 
     #collection .collectionContent { flex-direction: column; padding: 1rem; gap: 1rem }
     #collection .right { width: 100%; padding: 1rem; }
