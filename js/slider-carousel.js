@@ -3,7 +3,7 @@ var $carousel = $('.main-carousel').flickity({
     imagesLoaded: true,
     percentPosition: false,
     prevNextButtons: true,
-    pageDots: true,
+    pageDots: false,
 });
 
 // Getting the images
