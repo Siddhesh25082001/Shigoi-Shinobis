@@ -18,6 +18,11 @@
 a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
+    background: transparent;
+}
+
+input, textarea {
+    border: 2px solid #111 !important;
 }
 
 ul, ol {
@@ -314,7 +319,7 @@ nav .menuItem {
     top: 195%;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
     
     nav { flex-direction: column; padding: 0.5rem 1.5rem; }
     nav .logo { width: 100%; text-align: center; }

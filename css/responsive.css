@@ -148,6 +148,11 @@
     .communityBtns .btnContainer { padding: 4px; }
 
     footer { border-top-left-radius: 15px; border-top-right-radius: 15px; margin-top: 1rem; }
+
+    .info .base { font-size: 10px; width: 100%; margin: 0 auto; gap: 1rem; padding: 20px; border-radius: 25px; }
+    .phaseContainer { padding: 10px; width: 100%; gap: 1rem; }
+    .fourth { padding: 10px 20px !important; }
+    .odd, .even { padding: 20px !important; border-radius: 25px;} 
 }
 
 /* 320 - Small Mobile Screen */
@@ -173,12 +178,16 @@
     #home { gap: 2rem; }
     .aboutTitle h1 { font-size: 48px; }
     .info { gap: 2rem; }
-    .info .base { font-size: 10px; width: 80%; margin: 0 auto; gap: 1rem; }
+
+    .info .base { font-size: 10px; width: 100%; margin: 0 auto; gap: 1rem; padding: 20px; border-radius: 25px; }
+    .phaseContainer { padding: 10px; width: 100%; gap: 1rem; }
+    .fourth { padding: 10px 20px !important; }
+    .odd, .even { padding: 20px !important; border-radius: 25px;} 
+
     .info .second { padding: 20px;  flex-direction: column-reverse; }
     .info .second .left { gap: 1rem; }
     .info .second .left .second-content { font-size: 18px; }
 
-    .phaseContainer { padding: 20px; width: 100%; gap: 1rem; }
     .info .base .baseTitle { font-size: 18px; }
     .phaseContainer .phaseDetails { gap: 1rem; }
     .phaseContainer .phaseDetails ul { font-size: 8px; gap: 1rem }
@@ -206,7 +215,6 @@
     .member-details h3 { font-size: 12px; }
     .genealogy-tree ul { width: auto; }
 
-    .fourth { padding: 0; }
     .phase { font-size: 1rem; padding: 20px; } 
     .phaseContainer .phaseNumber { font-size: 18px; }
     .phaseContainer .phaseNumber { border-bottom: 2px solid tomato; padding-bottom: 0; }
