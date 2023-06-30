@@ -334,7 +334,7 @@ nav .menuItem {
     #about .aboutTitle { font-size: 1rem; }
     #about .aboutSubTitle { gap: 1rem; font-size: 0.75rem; }
     #about .right { width: 100%; }
-    #about .right img { width: 60%; position: relative; bottom: 2rem; }
+    #about .right img { width: 40%; position: relative; bottom: 3rem; }
 
     #collection .collectionContent { flex-direction: column; padding: 1rem; gap: 1rem }
     #collection .right { width: 100%; padding: 1rem; }
